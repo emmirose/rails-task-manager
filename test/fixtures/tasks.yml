@@ -2,14 +2,10 @@
 
 one:
   title: MyString
-  details: MyText
+  description: MyText
   completed: false
-  default: MyString
-  'false': MyString
 
 two:
   title: MyString
-  details: MyText
+  description: MyText
   completed: false
-  default: MyString
-  'false': MyString

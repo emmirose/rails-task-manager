@@ -1,0 +1,19 @@
+<h1><%= @task.title %></h1>
+<div class="container">
+<br>
+<br>
+<div class="details"><p><%= @task.description %></p></div>
+<br>
+<br>
+<div class="buttons">
+<%= link_to tasks_path do %>
+ <i class="fa-solid fa-rotate-left"></i>
+<% end %>
+<%= link_to edit_path do %>
+<i class="fa-solid fa-pen-to-square"></i>
+<% end %>
+<%= link_to task_path(@task),data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+<i class="fa-solid fa-trash"></i>
+<% end %>
+</div>
+  </div>
